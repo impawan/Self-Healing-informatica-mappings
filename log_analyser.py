@@ -96,14 +96,14 @@ def fix_data_type(mapping_xml,port_name, data_type):
         if i[1]=='Source Definition':
             node = XMLtree.xpath('//SOURCE[@NAME="%s"]' % i[0])[0]
             node = node.xpath('./SOURCEFIELD[@NAME="%s"]' % i[2])[0]
-            node.set('DATATYPE' ,'number')
+            node.set('DATATYPE' ,'string')
             
             
         else:
             
             node = XMLtree.xpath('//TRANSFORMATION[@NAME="%s"]' % i[0])[0]
             node = node.xpath('./TRANSFORMFIELD[@NAME="%s"]' % i[2])[0]
-            node.set('DATATYPE' ,'decimal')
+            node.set('DATATYPE' ,'string')
         
     fixed_XML =  etree.tostring(XMLtree,pretty_print=True).decode("utf-8") 
     fixed_XML = XML_metaData+fixed_XML+XML_end
