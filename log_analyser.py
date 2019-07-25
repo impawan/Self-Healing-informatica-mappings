@@ -24,18 +24,20 @@ XML_end = '''</REPOSITORY>
 </POWERMART>'''
 error_matrix = list()
 
-log = open('logs.txt', 'r')
+def readLogError(file_name):
 
-log = log.read()
-log = log.split('\n')
-for row in log:
-    if ': ERROR :' in row:
-        #print(row) 
-        error_matrix.append(row.split(':'))
+    log = open(file_name, 'r')
+    log = log.read()
+    log = log.split('\n')
+    for row in log:
+        if ': ERROR :' in row:
+            error_matrix.append(row.split(':'))
+            
+    df = pd.DataFrame(error_matrix)
+    return df
 
 
 
-df = pd.DataFrame(error_matrix)
 
 file = 'm_CrDbStatsment_orginal.xml'
 
@@ -90,8 +92,7 @@ def fix_data_type(mapping_xml,port_name, data_type):
             node = node[0]
         
        
-    #print(node_list)         
-    print(node_list)    
+    
     for i in node_list:
         if i[1]=='Source Definition':
             node = XMLtree.xpath('//SOURCE[@NAME="%s"]' % i[0])[0]
