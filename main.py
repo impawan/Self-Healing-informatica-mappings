@@ -30,3 +30,4 @@ error_matrix = error_matrix.drop([9,10] ,axis = 1)
 error_type = error_predition(error_matrix)
 #print(error_matrix[[7,8]])
 
+error_function_mapping['FR_3065']()
