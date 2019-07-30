@@ -1,0 +1,134 @@
+Timestamp : Severity : (Pid | Thread) : (ServiceType | ServiceName) : ClientNode : MessageCode : Message
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : VAR_27028 : Use override value [0] for user-defined workflow/worklet variable:[$$custid].
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6014 : Initializing session [s_m_CrDbStatsment] at [Wed Jul 17 16:53:22 2019].
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6683 : Repository Name: [INFA_REP]
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6684 : Server Name: [INT_SRVC]
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6686 : Folder: [INFA_FOLDER]
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6685 : Workflow: [wf_m_CrDbStatsment] Run Instance Name: [] Run Id: [1101]
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6101 : Mapping name: m_CrDbStatsment [version CheckedOut].
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6964 : Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6708 : Using configuration property [EnableDataEncryption,no]
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6708 : Using configuration property [StoreHAPersistenceInDB,no]
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6703 : Session [s_m_CrDbStatsment] is run by 64-bit Integration Service  [node01_ITEM-s65484], version [9.6.1], build [0607].
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24058 : Running Partition Group [1].
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24000 : Parallel Pipeline Engine initializing.
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24001 : Parallel Pipeline Engine running.
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24003 : Initializing session run.
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : CMN_1569 : Server Mode: [ASCII]
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : CMN_1570 : Server Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6151 : The session sort order is [Binary].
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6156 : Using low precision processing.
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6180 : Deadlock retry logic will not be implemented.
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6187 : Session target-based commit interval is [10000].
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6307 : DTM error log disabled. 
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7022 : TShmWriter: Initialized
+2019-07-17 16:53:22 : DEBUG : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7004 : Transformation Parse Warning [Cust||'                                                                                '||Transaction_id||'                                                                                '||amount||'                                                                                '||Credit_Debit]; transformation continues...
+2019-07-17 16:53:22 : DEBUG : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7004 : Transformation Parse Warning [<<PM Parse Warning>> [||]: operand converted to a string
+... >>>>Cust<<<<||'                                                                                '||Transaction_id||'                                                                                '||amount||'                                                                                '||Credit_Debit<<PM Parse Warning>> [||]: operand converted to a string
+... Cust||'                                                                                '||>>>>Transaction_id<<<<||'                                                                                '||amount||'                                                                                '||Credit_Debit<<PM Parse Warning>> [||]: operand converted to a string
+... Cust||'                                                                                '||Transaction_id||'                                                                                '||>>>>amount<<<<||'                                                                                '||Credit_Debit]; transformation continues...
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : DBG_21694 : AGG_AMNT Partition [0]: Index cache size = [37401730], Data cache size = [74803460]
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7212 : Increasing [Index Cache] size for transformation [AGG_AMNT] from [37401730] to [37402560].
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7212 : Increasing [Data Cache] size for transformation [AGG_AMNT] from [74803460] to [74803872].
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7029 : Aggregate Information: Creating New Index and Data Files
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7034 : Aggregate Information: Index file is [C:\Informatica\9.6.1\server\infa_shared\Cache\PMAGG117_9_0_1101.idx]
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7035 : Aggregate Information: Data file is [C:\Informatica\9.6.1\server\infa_shared\Cache\PMAGG117_9_0_1101.dat]
+2019-07-17 16:53:22 : DEBUG : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7004 : Transformation Parse Warning [GET_DATE_PART(SYSDATE ,'YYYY')||GET_DATE_PART(SYSDATE ,'MM')||GET_DATE_PART(SYSDATE ,'DD')]; transformation continues...
+2019-07-17 16:53:22 : DEBUG : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7004 : Transformation Parse Warning [<<PM Parse Warning>> [||]: operand converted to a string
+... >>>>GET_DATE_PART(SYSDATE ,'YYYY')<<<<||GET_DATE_PART(SYSDATE ,'MM')||GET_DATE_PART(SYSDATE ,'DD')<<PM Parse Warning>> [||]: operand converted to a string
+... GET_DATE_PART(SYSDATE ,'YYYY')||>>>>GET_DATE_PART(SYSDATE ,'MM')<<<<||GET_DATE_PART(SYSDATE ,'DD')<<PM Parse Warning>> [GET_DATE_PART]: operand converted to a string
+... GET_DATE_PART(SYSDATE ,'YYYY')||GET_DATE_PART(SYSDATE ,'MM')||>>>>GET_DATE_PART(SYSDATE ,'DD')<<<<]; transformation continues...
+2019-07-17 16:53:22 : DEBUG : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7004 : Transformation Parse Warning ['T'||date||Cust||'	'||amount]; transformation continues...
+2019-07-17 16:53:22 : DEBUG : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7004 : Transformation Parse Warning [<<PM Parse Warning>> [||]: operand converted to a string
+... 'T'||date||>>>>Cust<<<<||'	'||amount<<PM Parse Warning>> [amount]: operand converted to a string
+... 'T'||date||Cust||'	'||>>>>amount<<<<]; transformation continues...
+2019-07-17 16:53:22 : DEBUG : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7004 : Transformation Parse Warning [GET_DATE_PART(SYSDATE ,'YYYY')||GET_DATE_PART(SYSDATE ,'MM')||GET_DATE_PART(SYSDATE ,'DD')]; transformation continues...
+2019-07-17 16:53:22 : DEBUG : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7004 : Transformation Parse Warning [<<PM Parse Warning>> [||]: operand converted to a string
+... >>>>GET_DATE_PART(SYSDATE ,'YYYY')<<<<||GET_DATE_PART(SYSDATE ,'MM')||GET_DATE_PART(SYSDATE ,'DD')<<PM Parse Warning>> [||]: operand converted to a string
+... GET_DATE_PART(SYSDATE ,'YYYY')||>>>>GET_DATE_PART(SYSDATE ,'MM')<<<<||GET_DATE_PART(SYSDATE ,'DD')<<PM Parse Warning>> [GET_DATE_PART]: operand converted to a string
+... GET_DATE_PART(SYSDATE ,'YYYY')||GET_DATE_PART(SYSDATE ,'MM')||>>>>GET_DATE_PART(SYSDATE ,'DD')<<<<]; transformation continues...
+2019-07-17 16:53:22 : DEBUG : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7004 : Transformation Parse Warning ['H'||date||'-'||Cust]; transformation continues...
+2019-07-17 16:53:22 : DEBUG : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7004 : Transformation Parse Warning [<<PM Parse Warning>> [Cust]: operand converted to a string
+... 'H'||date||'-'||>>>>Cust<<<<]; transformation continues...
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : DBG_21693 : sorter: Cache size for partition [1] = [299213840]
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : SORT_40419 : For Transformation [sorter], memory used is [299213840] bytes and row size is 1012 bytes.
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6007 : DTM initialized successfully for session [s_m_CrDbStatsment]
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24033 : All DTM Connection Info: [<NONE>].
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24004 : PETL_24004 Starting pre-session tasks. : (Wed Jul 17 16:53:22 2019)
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24027 : PETL_24027 Pre-session task completed successfully. : (Wed Jul 17 16:53:22 2019)
+2019-07-17 16:53:22 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24006 : Starting data movement.
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6660 : Total Buffer Pool size is 24000000 bytes and Block size is 103272 bytes.
+2019-07-17 16:53:22 : INFO : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : DBG_21437 : Reader: Source is a file-based source.
+2019-07-17 16:53:22 : INFO : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : FR_3118 : source [SQ_src_ff_mon_statement] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+2019-07-17 16:53:22 : INFO : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : FR_3071 : Maximum Line sequential buffer length is 1026.
+2019-07-17 16:53:22 : INFO : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : BLKR_16003 : Initialization completed successfully.
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8124 : Target Table EXP_mon_statment :Writing output to: d:\Profiles\paprasad\INFA\Pawan\tgt\exp_mon_statment.txt
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8222 : Target file [d:\Profiles\paprasad\INFA\Pawan\tgt\exp_mon_statment.txt] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8270 : Target connection group #1 consists of target(s) [EXP_mon_statment]
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8003 : Writer initialization complete.
+2019-07-17 16:53:22 : INFO : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : BLKR_16007 : Reader run started.
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8005 : Writer run started.
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8158 : 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Wed Jul 17 16:53:22 2019
+
+Target tables:
+
+     EXP_mon_statment
+
+
+2019-07-17 16:53:22 : INFO : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : FR_3076 : Skipped over [1] lines.
+2019-07-17 16:53:22 : INFO : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : DBG_21430 : DBG_21430 Reading data from input source file [d:\Profiles\paprasad\INFA\Pawan\src\src_ff_mon_statement.txt] : (Wed Jul 17 16:53:22 2019)
+2019-07-17 16:53:22 : ERROR : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : FR_3065 : Row [1], field [Branch_code]: Invalid number: [Pawan].  The row will be skipped.
+2019-07-17 16:53:22 : ERROR : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : FR_3065 : Row [2], field [Branch_code]: Invalid number: [IFSC].  The row will be skipped.
+2019-07-17 16:53:22 : ERROR : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : FR_3065 : Row [3], field [Branch_code]: Invalid number: [ICC007].  The row will be skipped.
+2019-07-17 16:53:22 : ERROR : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : BLKR_16045 : Reader run terminating. [Error threshold [1] reached reading data from [d:\Profiles\paprasad\INFA\Pawan\src\src_ff_mon_statement.txt]]
+2019-07-17 16:53:22 : ERROR : (11236 | READER_1_1_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : BLKR_16034 : ERROR: Fetch failed.
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8167 : Start loading table [EXP_mon_statment] at: Wed Jul 17 16:53:22 2019
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8333 : Rolling back all the targets due to fatal session error.
+2019-07-17 16:53:22 : ERROR : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8170 : Writer run terminated: Abort Session request received from the DTM
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8168 : End loading table [EXP_mon_statment] at: Wed Jul 17 16:53:22 2019
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8035 : Load complete time: Wed Jul 17 16:53:22 2019
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: EXP_mon_statment (Instance Name: [EXP_mon_statment1])
+WRT_8044 No data loaded for this target
+
+
+
+2019-07-17 16:53:22 : INFO : (11236 | WRITER_1_*_1) : (IS | INT_SRVC) : node01_ITEM-s65484 : WRT_8043 : *****END LOAD SESSION*****
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24031 : 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [SQ_src_ff_mon_statement] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [SQ_src_ff_mon_statement] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_2_1] created for [the transformation stage] of partition point [AGG_AMNT] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [EXP_mon_statment1] has completed. The total run time was insufficient for any meaningful statistics.
+
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : CMN_1791 : The index cache size that would hold [0] aggregate groups of input rows for [AGG_AMNT], in memory, is [0] bytes
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : CMN_1790 : The data cache size that would hold [0] aggregate groups of input rows for [AGG_AMNT], in memory, is [0] bytes
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24005 : PETL_24005 Starting post-session tasks. : (Wed Jul 17 16:53:22 2019)
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24029 : PETL_24029 Post-session task completed successfully. : (Wed Jul 17 16:53:22 2019)
+2019-07-17 16:53:22 : INFO : (11236 | MAPPING) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6018 : The session completed with [0] row transformation errors. 
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7216 : Deleting cache files [C:\Informatica\9.6.1\server\infa_shared\Cache\PMAGG117_9_0_1101.idx] for transformation [AGG_AMNT].
+2019-07-17 16:53:22 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : TE_7216 : Deleting cache files [C:\Informatica\9.6.1\server\infa_shared\Cache\PMAGG117_9_0_1101.dat] for transformation [AGG_AMNT].
+2019-07-17 16:53:23 : INFO : (11236 | MANAGER) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24002 : Parallel Pipeline Engine finished.
+2019-07-17 16:53:23 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : PETL_24013 : Session run completed with failure.
+2019-07-17 16:53:23 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6022 : 
+
+SESSION LOAD SUMMARY
+================================================
+
+2019-07-17 16:53:23 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6252 : Source Load Summary.
+2019-07-17 16:53:23 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : CMN_1740 : Table: [SQ_src_ff_mon_statement] (Instance Name: [SQ_src_ff_mon_statement])
+	 Output Rows [6], Affected Rows [6], Applied Rows [6], Rejected Rows [3]
+2019-07-17 16:53:23 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6253 : Target Load Summary.
+2019-07-17 16:53:23 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : CMN_1740 : Table: [EXP_mon_statment] (Instance Name: [EXP_mon_statment1])
+	 Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [0]
+2019-07-17 16:53:23 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6023 : 
+===================================================
+
+2019-07-17 16:53:23 : INFO : (11236 | DIRECTOR) : (IS | INT_SRVC) : node01_ITEM-s65484 : TM_6020 : Session [s_m_CrDbStatsment] completed at [Wed Jul 17 16:53:23 2019].
