@@ -7,9 +7,6 @@ Created on Tue Jul 23 16:38:52 2019
 
 import os 
 import datetime
-import subprocess
-
-os.system('mkdir test')
 
 time = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 timestamp = str(time)
@@ -44,9 +41,13 @@ def fetch_log(Domain_name="Domain_item-s65484",username = "pawan",pswd = "pawan"
 
 
 def fetch_mapping(Domain_name="Domain_item-s65484",username = "pawan",pswd = "pawan",location = "./mapping/",mapping_name = "m_CrDbStatsment",rep ="INFA_REP", folder = "INFA_FOLDER"):
+    '''
+    d:\Profiles\paprasad\python\Self-Healing-informatica-mappings\batch_param.bat INFA_REP "Domain_ITEM-s65484" pawan pawan m_CrDbStatsment INFA_FOLDER "d:\Profiles\paprasad\python\Self-Healing-informatica-mappings\m_CrDbStatsment_test.xml"
+    '''
+    
     file_name = mapping_name+'.xml'
     location = 'd:\Profiles\paprasad\python\Self-Healing-informatica-mappings'+location+file_name
     cmd = 'd:\Profiles\paprasad\python\Self-Healing-informatica-mappings\\batch_param.bat '+rep+' '+Domain_name+' '+username+' '+pswd+' '+mapping_name+' '+folder+' '+location
     excute_commands(cmd)
-    return file_name
+    return location
                   
