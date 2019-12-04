@@ -22,7 +22,7 @@ fetch_log(Domain_name="Domain_item-s65484",username = "pawan",pswd = "pawan",frm
               IR = "INFA_REP",FOLDER = "INFA_FOLDER",session = "s_m_CrDbStatsment" ,wf = "wf_m_CrDbStatsment"):
 '''
 log_file = fetch_log(wf = "wf_m_CrDbStatsment",session= "s_m_CrDbStatsment") 
-print (log_file)
+print ('\n\n****Latest Log is fetched saved in log file Dir: ',log_file)
 error_matrix  = readLogError(log_file)
 error_matrix[8] = error_matrix[8]+' '+error_matrix[9]+' '+error_matrix[10]
 
@@ -38,6 +38,6 @@ mapping_xml = fetch_mapping(Domain_name="Domain_item-s65484",username = "pawan",
 
 mapping_xml = xml_formation(mapping_xml)
 error_msg = error_type[1]
-print(error_msg)
+print('\n\n\n Error Message: ',error_msg)
 arg = [mapping_xml,error_msg]
 error_function_mapping['FR_3065'](arg)
